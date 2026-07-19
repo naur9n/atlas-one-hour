@@ -5,7 +5,7 @@
   "services": [
     {
       "type": "http",
-      "endpoint": "https://YOUR-DOMAIN.example/api/analyze",
+      "endpoint": "https://atlas-one-hour-production.up.railway.app/api/analyze",
       "method": "POST",
       "contentType": "application/json",
       "inputSchema": {
@@ -27,3 +27,4 @@
     "note": "Metadata prototype; register only after the public URL is stable."
   }
 }
+
