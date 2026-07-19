@@ -1,0 +1,29 @@
+{
+  "name": "Atlas Solidity Risk Agent",
+  "description": "An x402-paid service that produces deterministic Solidity risk signals.",
+  "version": "0.1.0",
+  "services": [
+    {
+      "type": "http",
+      "endpoint": "https://YOUR-DOMAIN.example/api/analyze",
+      "method": "POST",
+      "contentType": "application/json",
+      "inputSchema": {
+        "type": "object",
+        "required": ["source"],
+        "properties": {
+          "source": { "type": "string" }
+        }
+      }
+    }
+  ],
+  "payment": {
+    "protocol": "x402",
+    "network": "eip155:84532",
+    "price": "$0.01"
+  },
+  "trust": {
+    "identityStandardTarget": "ERC-8004",
+    "note": "Metadata prototype; register only after the public URL is stable."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "atlas-one-hour",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "One-hour MVP: x402-paid Solidity risk analysis API, buyer client, test token and escrow prototype.",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "buy": "node scripts/buy.js",
+    "check": "node --check src/server.js && node --check scripts/buy.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@x402/core": "^2.13.0",
+    "@x402/evm": "^2.13.0",
+    "@x402/express": "^2.13.0",
+    "@x402/fetch": "^2.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "viem": "^2.33.3"
+  }
+}
